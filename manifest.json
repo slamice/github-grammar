@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Github grammar error detector",
+  "description": "This extension seraches github support posts for grammar errors.",
+  "version": "1.0",
+
+  "permissions": [
+    "https://github.com"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
