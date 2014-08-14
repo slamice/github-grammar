@@ -1,32 +1,37 @@
 {
   "manifest_version": 2,
+  "name": "github-highlighter",
+  "version": "0.0.1",
+  "description": "Add highlighting to github single jobs and customer dashboard",
 
-  "name": "Github grammar error detector",
-  "description": "This extension seraches github support posts for grammar errors.",
-  "version": "1.0",
-
-  "permissions": [
-  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
 
   "background": {
     "persistent": false,
     "scripts": ["js/background.js"]
   },
 
-  "browser_action": {
-    "default_icon": "icon.png"
-  },
-
   "content_scripts": [
     {
       "matches": [
+        "http://github.com/*",
         "https://github.com/*",
-        "http://github.com/*"
+        "http://*.github.com/*",
+        "https://*.github.com/*"
       ],
       "js": [
-        "js/jquery.min.js"
+        "js/jquery.min.js",
+        "js/typo.js"
       ]
     }
-  ]
+  ],
 
+  "permissions": [
+    "http://github.com/*",
+    "https://github.com/*",
+    "http://*.github.com/*",
+    "https://*.github.com/*"
+  ]
 }
