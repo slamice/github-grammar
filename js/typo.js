@@ -150,9 +150,9 @@ Typo.prototype = {
 		
 		if (req.overrideMimeType)
 			req.overrideMimeType("text/plain; charset=" + charset);
-		
+
 		req.send(null);
-		
+
 		return req.responseText;
 	},
 	
