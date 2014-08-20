@@ -16,6 +16,8 @@
   "content_scripts": [
     {
       "matches": [
+        "http://github.com/",
+        "https://github.com/",
         "http://github.com/*",
         "https://github.com/*",
         "http://*.github.com/*",
@@ -24,14 +26,14 @@
       "js": [
         "js/jquery.min.js",
         "js/typo.js",
-        "jquery.highlighttextarea.min.js",
-        
+        "js/jquery.highlighttextarea.min.js"
       ]
     }
   ],
 
   "web_accessible_resources": [
-    "lib/typo/dictionaries/en_US/*"
+    "lib/typo/dictionaries/en_US/*",
+    "js/jquery.highlighttextarea.min.css"
   ],
 
   "permissions": [
