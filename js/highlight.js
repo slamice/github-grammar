@@ -8,7 +8,7 @@
     // ===============================
     $.fn.highlightIt = function(option) {
         var args = arguments;
-
+        // trying to call the selected textarea element to surround it with a div
         options = typeof option == 'object' && option;
         console.log('stuff2:'+options);
 
