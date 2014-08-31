@@ -7,9 +7,15 @@ $(function() {
   var highlightSpellingError = function($target, $color, $ele_id) {
     console.log('element: '+$ele_id);
     console.log('target: '+$target);
-    $('textarea').highlightTextarea({
-      words: $target
-    });
+    //$('textarea').highlightTextarea({
+    //  words: $target
+    //});
+
+//    $('textarea').highlightTextarea({
+    //  words: $target
+//    });
+
+    $($ele_id).highlightIt({});
 
 //    if ( /(\{\/?\d+\})/g.test(html) ) {
       // html = $target.replace($target, '<span style=\"background-color: #' + $color + ';\">$1</span>');

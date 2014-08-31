@@ -26,7 +26,8 @@
       "js": [
         "js/jquery.min.js",
         "js/typo.js",
-        "js/jquery.highlighttextarea.min.js"
+        "js/jquery.highlighttextarea.js",
+        "js/highlight.js"
       ]
     }
   ],
