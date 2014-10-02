@@ -7,6 +7,15 @@ $(function() {
   var highlightSpellingError = function($target, $color, $ele_id) {
     console.log('element: '+$ele_id);
     console.log('target: '+$target);
+
+    $('#'+$ele_id).textareaHighlighter({
+        matches: [
+            {
+                'match': [$target], // will check for this matches
+                'matchClass': 'match' // on matched text this class will be added
+            },
+        ]
+    });
     //$('textarea').highlightTextarea({
     //  words: $target
     //});
@@ -14,8 +23,6 @@ $(function() {
 //    $('textarea').highlightTextarea({
     //  words: $target
 //    });
-
-    $($ele_id).highlightIt({});
 
 //    if ( /(\{\/?\d+\})/g.test(html) ) {
       // html = $target.replace($target, '<span style=\"background-color: #' + $color + ';\">$1</span>');

@@ -26,15 +26,14 @@
       "js": [
         "js/jquery.min.js",
         "js/typo.js",
-        "js/jquery.highlighttextarea.js",
-        "js/highlight.js"
+        "js/jquery.textarea-highlighter.js"
       ]
     }
   ],
 
   "web_accessible_resources": [
     "lib/typo/dictionaries/en_US/*",
-    "js/jquery.highlighttextarea.min.css"
+    "js/jquery.textarea-highlighter.js"
   ],
 
   "permissions": [
