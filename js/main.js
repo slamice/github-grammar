@@ -4,6 +4,15 @@ $(function() {
   var lightblue  = '#A9D0F5';
   var lightred   = '#F5A9A9';
 
+  var getUniqueWordListFromSource = function( $target ){
+    var tmpArray = [];
+    $target.each(function(){
+      tmpArray.push( $(this).text() );
+    });
+
+    return getUniqueArray( tmpArray );
+  };
+
   var highlightSpellingError = function($target, $color, $ele_id) {
     console.log('element: '+$ele_id);
     console.log('target: '+$target);
@@ -11,8 +20,8 @@ $(function() {
     $('#'+$ele_id).textareaHighlighter({
         matches: [
             {
-                'match': [$target], // will check for this matches
-                'matchClass': 'match' // on matched text this class will be added
+                'matchClass': '{ background-color: #09f; opacity: 0.6; }',
+                'match': '{ color: #4c9; }'
             },
         ]
     });
